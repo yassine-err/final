@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Photos Interactive</title>
+    <style>
+        #image {
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 300px;
+            font-size: 20px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="initGallery()">
+    <div id="image">Survolez une image ci-dessous pour l'afficher ici</div>
+    <img src="image1.jpg" alt="Description de l'image 1" class="thumbnail" tabindex="0" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img src="image2.jpg" alt="Description de l'image 2" class="thumbnail" tabindex="0" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img src="image3.jpg" alt="Description de l'image 3" class="thumbnail" tabindex="0" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img src="image4.jpg" alt="Description de l'image 4" class="thumbnail" tabindex="0" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img src="image5.jpg" alt="Description de l'image 5" class="thumbnail" tabindex="0" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    <img src="image6.jpg" alt="Description de l'image 6" class="thumbnail" tabindex="0" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    <script src="script.js"></script>
+</body>
+</html>
